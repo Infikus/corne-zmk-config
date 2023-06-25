@@ -24,7 +24,7 @@
     };
 
     behaviors {
-        hml: homerow_mods {
+        hml: hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT";
             flavor = "balanced";
@@ -35,7 +35,7 @@
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;             // delay positional check until key-release
         };
-        hmr: homerow_mods {
+        hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_RIGHT";
             flavor = "balanced";
