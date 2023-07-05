@@ -21,6 +21,24 @@
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE &kp SPACE>;
         };
+        e_aigue: e_aigue {
+            compatible = "zmk,behavior-macro";
+            label = "E_AIGUE";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp E>;
+        };
+        e_grave: e_grave {
+            compatible = "zmk,behavior-macro";
+            label = "E_GRAVE";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp E>;
+        };
+        a_grave: a_grave {
+            compatible = "zmk,behavior-macro";
+            label = "A_GRAVE";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp A>;
+        };
     };
 
     behaviors {
@@ -70,14 +88,39 @@
     combos {
         compatible = "zmk,combos";
 
-        escape {
-            bindings = <&kp ESCAPE>;
+        e_grave {
+            bindings = <&e_grave>;
             key-positions = <19 20>;
+        };
+
+        e_aigue {
+            bindings = <&e_aigue>;
+            key-positions = <20 21>;
+        };
+
+        a_grave {
+            bindings = <&a_grave>;
+            key-positions = <13 14>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
+
+        Base {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+
+            bindings = <
+&kp LEFT_PARENTHESIS            &kp Q            &kp W              &kp F         &kp P      &kp B      &kp J          &kp L               &kp U             &kp Y  &kp SINGLE_QUOTE        &kp MINUS
+      &kp LEFT_BRACE  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T      &kp G      &kp M   &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O    &kp SEMICOLON
+           &kp EQUAL            &kp Z            &kp X              &kp C         &kp D      &kp V      &kp K          &kp H           &kp COMMA           &kp DOT          &kp FSLH  &kp EXCLAMATION
+                                                           &kp LEFT_SHIFT   &lt 2 SPACE  &lt 1 TAB    &kp RET  &kp BACKSPACE           &lt 3 DEL
+            >;
+        };
 
         Symbols {
             // -----------------------------------------------------------------------------------------
@@ -94,27 +137,12 @@
             >;
         };
 
-        Base {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
-            bindings = <
-&kp LEFT_PARENTHESIS            &kp Q            &kp W              &kp F         &kp P      &kp B      &kp J          &kp L               &kp U             &kp Y  &kp SINGLE_QUOTE        &kp MINUS
-      &kp LEFT_BRACE  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T      &kp G      &kp M   &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O    &kp SEMICOLON
-           &kp EQUAL            &kp Z            &kp X              &kp C         &kp D      &kp V      &kp K          &kp H           &kp COMMA           &kp DOT          &kp FSLH  &kp EXCLAMATION
-                                                           &kp LEFT_SHIFT   &lt 3 SPACE  &lt 0 TAB    &kp RET  &kp BACKSPACE           &lt 3 DEL
-            >;
-        };
-
         Numbers {
             bindings = <
-&trans  &kp N1         &kp N2                 &kp N3                   &kp N4  &kp N5       &kp N6        &kp N7  &kp N8  &kp N9     &kp N0  &trans
-&trans  &trans  &hml LALT DOT  &hml LEFT_SHIFT COMMA  &hml LEFT_CONTROL EQUAL  &trans     &kp STAR        &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
-&trans  &trans         &trans                 &trans                   &trans  &trans    &kp SLASH  &kp NUMBER_1  &kp N2  &kp N3   &kp PLUS  &trans
-                                              &trans                   &trans  &trans       &trans        &trans  &trans
+&trans  &kp N1         &kp N2                 &kp N3                   &kp N4  &kp N5       &kp N6        &kp N7        &kp N8  &kp N9     &kp N0  &trans
+&trans  &trans  &hml LALT DOT  &hml LEFT_SHIFT COMMA  &hml LEFT_CONTROL EQUAL  &trans     &kp STAR        &kp N4        &kp N5  &kp N6  &kp MINUS  &trans
+&trans  &trans         &trans                 &trans                   &trans  &trans    &kp SLASH  &kp NUMBER_1        &kp N2  &kp N3   &kp PLUS  &trans
+                                              &trans                   &trans  &trans       &trans        &trans  &kp NUMBER_0
             >;
         };
 
@@ -126,9 +154,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-   &kp TAB        &kp N1             &kp N2        &kp N3           &kp N4        &kp N5      &kp N6    &kp N7  &kp N8     &kp N9  &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans    &trans
- &kp LSHFT        &trans  &kp C_VOLUME_DOWN    &kp K_MUTE  &kp C_VOLUME_UP        &trans      &trans    &trans  &trans     &trans  &trans    &trans
+&kp ESCAPE        &trans             &trans        &trans           &trans        &trans      &trans    &trans  &trans     &trans  &trans  &trans
+    &trans        &trans  &kp C_VOLUME_DOWN    &kp K_MUTE  &kp C_VOLUME_UP        &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4      &trans    &trans  &trans     &trans  &trans  &trans
                                                    &trans           &trans        &trans      &trans    &trans  &trans
             >;
         };
