@@ -74,7 +74,7 @@
             compatible = "zmk,behavior-macro";
             label = "CTRL_ALT_SUP";
             #binding-cells = <0>;
-            bindings = <&kt LCTRL &kt LEFT_ALT &kp DEL &kp>;
+            bindings = <&kt LCTRL &kt LEFT_ALT &kp DEL>;
         };
     };
 
