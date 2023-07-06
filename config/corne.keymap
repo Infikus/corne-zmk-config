@@ -39,6 +39,36 @@
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp A>;
         };
+        e_circ: e_circ {
+            compatible = "zmk,behavior-macro";
+            label = "E_CIRC";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp E>;
+        };
+        e_trema: e_trema {
+            compatible = "zmk,behavior-macro";
+            label = "E_TREMA";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp E>;
+        };
+        double_quote: double_quote {
+            compatible = "zmk,behavior-macro";
+            label = "DOUBLE_QUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
+        };
+        grave: grave {
+            compatible = "zmk,behavior-macro";
+            label = "GRAVE";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp SPACE>;
+        };
+        caret: caret {
+            compatible = "zmk,behavior-macro";
+            label = "CARET";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp SPACE>;
+        };
     };
 
     behaviors {
@@ -115,7 +145,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp LEFT_PARENTHESIS            &kp Q            &kp W              &kp F         &kp P      &kp B      &kp J          &kp L               &kp U             &kp Y  &kp SINGLE_QUOTE        &kp MINUS
+&kp LEFT_PARENTHESIS            &kp Q            &kp W              &kp F         &kp P      &kp B      &kp J          &kp L               &kp U             &kp Y            &quote        &kp MINUS
       &kp LEFT_BRACE  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T      &kp G      &kp M   &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O    &kp SEMICOLON
            &kp EQUAL            &kp Z            &kp X              &kp C         &kp D      &kp V      &kp K          &kp H           &kp COMMA           &kp DOT          &kp FSLH  &kp EXCLAMATION
                                                            &kp LEFT_SHIFT   &lt 2 SPACE  &lt 1 TAB    &kp RET  &kp BACKSPACE           &lt 3 DEL
@@ -130,8 +160,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp DOUBLE_QUOTES  &kp CARET  &kp GRAVE  &kp SINGLE_QUOTE  &trans      &kp CARET       &kp AMPS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR   &kp PIPE
-    &trans             &trans     &trans     &trans            &trans  &trans         &kp AT  &kp AMPERSAND              &kp LBKT               &kp RBKT    &kp BSLH  &kp GRAVE
+&kp ESCAPE  &kp DOUBLE_QUOTES  &kp CARET  &kp GRAVE  &kp SINGLE_QUOTE  &trans         &caret       &kp AMPS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR   &kp PIPE
+    &trans             &trans     &trans     &trans            &trans  &trans         &kp AT  &kp AMPERSAND              &kp LBKT               &kp RBKT    &kp BSLH     &grave
     &trans             &trans     &trans     &trans            &trans  &trans    &kp PERCENT         &kp LT              &kp LBRC               &kp RBRC      &kp GT  &kp TILDE
                                              &trans            &trans  &trans         &trans         &trans                &trans
             >;
