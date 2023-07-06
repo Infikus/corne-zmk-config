@@ -75,6 +75,12 @@
             #binding-cells = <0>;
             bindings = <&kp RG(C)>;
         };
+        tilde: tilde {
+            compatible = "zmk,behavior-macro";
+            label = "TILDE";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp SPACE>;
+        };
     };
 
     behaviors {
@@ -186,9 +192,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp DOUBLE_QUOTES  &kp CARET  &kp GRAVE  &kp SINGLE_QUOTE  &trans         &caret       &kp AMPS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR   &kp PIPE
-    &trans             &trans     &trans     &trans            &trans  &trans         &kp AT  &kp AMPERSAND              &kp LBKT               &kp RBKT    &kp BSLH     &grave
-    &trans             &trans     &trans     &trans            &trans  &trans    &kp PERCENT         &kp LT              &kp LBRC               &kp RBRC      &kp GT  &kp TILDE
+&kp ESCAPE  &kp DOUBLE_QUOTES  &kp CARET  &kp GRAVE  &kp SINGLE_QUOTE  &trans         &caret       &kp AMPS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR  &kp PIPE
+    &trans             &trans     &trans     &trans            &trans  &trans         &kp AT  &kp AMPERSAND              &kp LBKT               &kp RBKT    &kp BSLH    &grave
+    &trans             &trans     &trans     &trans            &trans  &trans    &kp PERCENT         &kp LT              &kp LBRC               &kp RBRC      &kp GT    &tilde
                                              &trans            &trans  &trans         &trans         &trans                &trans
             >;
         };
