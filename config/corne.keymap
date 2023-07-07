@@ -167,6 +167,7 @@
             timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
+
         e_maj_grave {
             bindings = <&e_maj_grave>;
             key-positions = <19 20>;
@@ -180,6 +181,7 @@
             timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
+
         e_maj_aigue {
             bindings = <&kp RA(LS(E))>;
             key-positions = <20 21>;
@@ -193,6 +195,7 @@
             timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
+
         a_maj_grave {
             bindings = <&a_maj_grave>;
             key-positions = <13 14>;
@@ -213,6 +216,7 @@
             timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
+
         e_maj_circ {
             bindings = <&e_maj_circ>;
             key-positions = <8 20>;
@@ -226,6 +230,7 @@
             timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
+
         e_maj_trema {
             bindings = <&e_maj_trema>;
             key-positions = <20 32>;
@@ -239,14 +244,20 @@
             timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
+
         c_maj_cedille {
             bindings = <&kp RA(LS(C))>;
             key-positions = <27 28>;
             timeout-ms = <COMBO_TERM>;
             layers = <4>;
         };
-    };
 
+        combo_underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <32 33>;
+            layers = <0>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -313,10 +324,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp LEFT_PARENTHESIS        &kp LS(Q)            &kp LS(W)              &kp LS(F)         &kp LS(P)      &kp LS(B)      &kp LS(J)          &kp LS(L)               &kp LS(U)             &kp LS(Y)            &double_quote        &kp LS(MINUS)
-      &kp LEFT_BRACE  &hml LEFT_GUI LS(A)  &hml LEFT_ALT LS(R)  &hml LEFT_SHIFT LS(S)  &hml LCTRL LS(T)      &kp LS(G)      &kp LS(M)   &hmr RCTRL LS(N)  &hmr RIGHT_SHIFT LS(E)  &hmr RIGHT_ALT LS(I)  &hmr RIGHT_GUI LS(O)    &kp LS(SEMICOLON)
-           &kp EQUAL            &kp LS(Z)            &kp LS(X)              &kp LS(C)         &kp LS(D)      &kp LS(V)      &kp LS(K)          &kp LS(H)           &kp LS(COMMA)           &kp LS(DOT)          &kp LS(FSLH)  &kp EXCLAMATION
-                                                           &kp LEFT_SHIFT   &lt 1 SPACE  &lt 2 TAB    &kp RET  &kp BACKSPACE           &lt 3 DEL
+&kp LEFT_PARENTHESIS            &kp LS(Q)            &kp LS(W)              &kp LS(F)         &kp LS(P)  &kp LS(B)    &kp LS(J)         &kp LS(L)               &kp LS(U)             &kp LS(Y)         &double_quote      &kp LS(MINUS)
+      &kp LEFT_BRACE  &hml LEFT_GUI LS(A)  &hml LEFT_ALT LS(R)  &hml LEFT_SHIFT LS(S)  &hml LCTRL LS(T)  &kp LS(G)    &kp LS(M)  &hmr RCTRL LS(N)  &hmr RIGHT_SHIFT LS(E)  &hmr RIGHT_ALT LS(I)  &hmr RIGHT_GUI LS(O)  &kp LS(SEMICOLON)
+           &kp EQUAL            &kp LS(Z)            &kp LS(X)              &kp LS(C)         &kp LS(D)  &kp LS(V)    &kp LS(K)         &kp LS(H)           &kp LS(COMMA)           &kp LS(DOT)          &kp LS(FSLH)    &kp EXCLAMATION
+                                                                       &kp LEFT_SHIFT       &lt 1 SPACE  &lt 2 TAB      &kp RET     &kp BACKSPACE               &lt 3 DEL
             >;
         };
     };
