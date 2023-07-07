@@ -164,98 +164,97 @@
         e_grave {
             bindings = <&e_grave>;
             key-positions = <19 20>;
-            timeout-ms = <30>;
+            timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
 
         e_maj_grave {
             bindings = <&e_maj_grave>;
             key-positions = <19 20>;
-            timeout-ms = <30>;
+            timeout-ms = <COMBO_TERM>;
             layers = <4>;
         };
 
         e_aigue {
             bindings = <&kp RA(E)>;
             key-positions = <20 21>;
-            timeout-ms = <30>;
+            timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
 
         e_maj_aigue {
             bindings = <&kp RA(LS(E))>;
             key-positions = <20 21>;
-            timeout-ms = <30>;
+            timeout-ms = <COMBO_TERM>;
             layers = <4>;
         };
 
         a_grave {
             bindings = <&a_grave>;
             key-positions = <13 14>;
-            timeout-ms = <30>;
+            timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
 
         a_maj_grave {
             bindings = <&a_maj_grave>;
             key-positions = <13 14>;
-            timeout-ms = <30>;
+            timeout-ms = <COMBO_TERM>;
             layers = <4>;
         };
 
         ctrl_alt_sup {
             bindings = <&kp LC(LA(DEL))>;
             key-positions = <9 10 11>;
-            timeout-ms = <30>;
+            timeout-ms = <COMBO_TERM>;
             slow-release;
         };
 
         e_circ {
             bindings = <&e_circ>;
             key-positions = <8 20>;
-            timeout-ms = <30>;
+            timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
 
         e_maj_circ {
             bindings = <&e_maj_circ>;
             key-positions = <8 20>;
-            timeout-ms = <30>;
+            timeout-ms = <COMBO_TERM>;
             layers = <4>;
         };
 
         e_trema {
             bindings = <&e_trema>;
             key-positions = <20 32>;
-            timeout-ms = <30>;
+            timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
 
         e_maj_trema {
             bindings = <&e_maj_trema>;
             key-positions = <20 32>;
-            timeout-ms = <30>;
+            timeout-ms = <COMBO_TERM>;
             layers = <4>;
         };
 
         c_cedille {
             bindings = <&kp RA(C)>;
             key-positions = <27 28>;
-            timeout-ms = <30>;
+            timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
 
         c_maj_cedille {
             bindings = <&kp RA(LS(C))>;
             key-positions = <27 28>;
-            timeout-ms = <30>;
+            timeout-ms = <COMBO_TERM>;
             layers = <4>;
         };
 
         combo_underscore {
             bindings = <&kp UNDER>;
             key-positions = <32 33>;
-            timeout-ms = <30>;
             layers = <0>;
         };
     };
@@ -274,7 +273,7 @@
 &kp LEFT_PARENTHESIS            &kp Q            &kp W              &kp F         &kp P      &kp B      &kp J          &kp L               &kp U             &kp Y            &quote        &kp MINUS
       &kp LEFT_BRACE  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T      &kp G      &kp M   &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O    &kp SEMICOLON
            &kp EQUAL            &kp Z            &kp X              &kp C         &kp D      &kp V      &kp K          &kp H           &kp COMMA           &kp DOT          &kp FSLH  &kp EXCLAMATION
-                                                           &kp LEFT_SHIFT   &lt 1 SPACE  &lt 2 TAB    &kp RET  &kp BACKSPACE           &lt 3 DEL
+                                                                    &mo 4   &lt 1 SPACE  &lt 2 TAB    &kp RET  &kp BACKSPACE           &lt 3 DEL
             >;
         };
 
