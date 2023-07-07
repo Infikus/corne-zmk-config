@@ -13,6 +13,8 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5  // right hand
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // thumbs
 
+#define COMBO_TERM 30;
+
 / {
     macros {
         quote: quote {
@@ -133,36 +135,43 @@
         e_grave {
             bindings = <&e_grave>;
             key-positions = <19 20>;
+            timeout-ms = <COMBO_TERM>;
         };
 
         e_aigue {
             bindings = <&e_aigue>;
             key-positions = <20 21>;
+            timeout-ms = <COMBO_TERM>;
         };
 
         a_grave {
             bindings = <&a_grave>;
             key-positions = <13 14>;
+            timeout-ms = <COMBO_TERM>;
         };
 
         ctrl_alt_sup {
             bindings = <&kp LC(LA(DEL))>;
             key-positions = <9 10 11>;
+            timeout-ms = <COMBO_TERM>;
         };
 
         e_circ {
             bindings = <&e_circ>;
             key-positions = <8 20>;
+            timeout-ms = <COMBO_TERM>;
         };
 
         e_trema {
             bindings = <&e_trema>;
             key-positions = <20 32>;
+            timeout-ms = <COMBO_TERM>;
         };
 
         c_cedille {
             bindings = <&kp RA(C)>;
             key-positions = <27 28>;
+            timeout-ms = <COMBO_TERM>;
         };
     };
 
