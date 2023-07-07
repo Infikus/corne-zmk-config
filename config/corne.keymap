@@ -255,6 +255,7 @@
         combo_underscore {
             bindings = <&kp UNDER>;
             key-positions = <32 33>;
+            timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
     };
