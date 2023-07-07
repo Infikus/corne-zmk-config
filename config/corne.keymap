@@ -237,7 +237,7 @@
                                                    &trans           &trans        &trans      &trans    &trans  &trans
             >;
         };
-        
+
         Shift {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
@@ -246,7 +246,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp LEFT_PARENTHESIS            &kp Q            &kp W              &kp F         &kp P      &kp B      &kp J          &kp L               &kp U             &kp Y            &quote        &kp MINUS
+&kp LEFT_PARENTHESIS        &kp LS(Q)            &kp W              &kp F         &kp P      &kp B      &kp J          &kp L               &kp U             &kp Y            &quote        &kp MINUS
       &kp LEFT_BRACE  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T      &kp G      &kp M   &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O    &kp SEMICOLON
            &kp EQUAL            &kp Z            &kp X              &kp C         &kp D      &kp V      &kp K          &kp H           &kp COMMA           &kp DOT          &kp FSLH  &kp EXCLAMATION
                                                            &kp LEFT_SHIFT   &lt 1 SPACE  &lt 2 TAB    &kp RET  &kp BACKSPACE           &lt 3 DEL
