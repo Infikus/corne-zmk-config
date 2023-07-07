@@ -22,6 +22,12 @@
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE &kp SPACE>;
         };
+        double_quote: double_quote {
+            compatible = "zmk,behavior-macro";
+            label = "DOUBLE_QUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
+        };
         e_aigue: e_aigue {
             compatible = "zmk,behavior-macro";
             label = "E_AIGUE";
@@ -33,12 +39,6 @@
             label = "E_GRAVE";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp E>;
-        };
-        a_grave: a_grave {
-            compatible = "zmk,behavior-macro";
-            label = "A_GRAVE";
-            #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp A>;
         };
         e_circ: e_circ {
             compatible = "zmk,behavior-macro";
@@ -52,11 +52,41 @@
             #binding-cells = <0>;
             bindings = <&kp DOUBLE_QUOTES &kp E>;
         };
-        double_quote: double_quote {
+        e_maj_aigue: e_maj_aigue {
             compatible = "zmk,behavior-macro";
-            label = "DOUBLE_QUOTE";
+            label = "E_MAJ_AIGUE";
             #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
+            bindings = <&kp SINGLE_QUOTE &kp LS(E)>;
+        };
+        e_maj_grave: e_maj_grave {
+            compatible = "zmk,behavior-macro";
+            label = "E_MAJ_GRAVE";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp LS(E)>;
+        };
+        e_maj_circ: e_maj_circ {
+            compatible = "zmk,behavior-macro";
+            label = "E_MAJ_CIRC";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp LS(E)>;
+        };
+        e_maj_trema: e_maj_trema {
+            compatible = "zmk,behavior-macro";
+            label = "E_MAJ_TREMA";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp LS(E)>;
+        };
+        a_grave: a_grave {
+            compatible = "zmk,behavior-macro";
+            label = "A_GRAVE";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp A>;
+        };
+        a_maj_grave: a_ma_grave {
+            compatible = "zmk,behavior-macro";
+            label = "A_MAJ_GRAVE";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp LS(A)>;
         };
         grave: grave {
             compatible = "zmk,behavior-macro";
@@ -246,9 +276,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp LEFT_PARENTHESIS        &kp LS(Q)            &kp W              &kp F         &kp P      &kp B      &kp J          &kp L               &kp U             &kp Y            &quote        &kp MINUS
-      &kp LEFT_BRACE  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T      &kp G      &kp M   &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O    &kp SEMICOLON
-           &kp EQUAL            &kp Z            &kp X              &kp C         &kp D      &kp V      &kp K          &kp H           &kp COMMA           &kp DOT          &kp FSLH  &kp EXCLAMATION
+&kp LEFT_PARENTHESIS        &kp LS(Q)            &kp LS(W)              &kp LS(F)         &kp LS(P)      &kp LS(B)      &kp LS(J)          &kp LS(L)               &kp LS(U)             &kp LS(Y)            &double_quote        &kp LS(MINUS)
+      &kp LEFT_BRACE  &hml LEFT_GUI LS(A)  &hml LEFT_ALT LS(R)  &hml LEFT_SHIFT LS(S)  &hml LCTRL LS(T)      &kp LS(G)      &kp LS(M)   &hmr RCTRL LS(N)  &hmr RIGHT_SHIFT LS(E)  &hmr RIGHT_ALT LS(I)  &hmr RIGHT_GUI LS(O)    &kp LS(SEMICOLON)
+           &kp EQUAL            &kp LS(Z)            &kp LS(X)              &kp LS(C)         &kp LS(D)      &kp LS(V)      &kp LS(K)          &kp LS(H)           &kp LS(COMMA)           &kp LS(DOT)          &kp LS(FSLH)  &kp EXCLAMATION
                                                            &kp LEFT_SHIFT   &lt 1 SPACE  &lt 2 TAB    &kp RET  &kp BACKSPACE           &lt 3 DEL
             >;
         };
