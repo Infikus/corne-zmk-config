@@ -167,6 +167,12 @@
             timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
+        e_maj_grave {
+            bindings = <&e_maj_grave>;
+            key-positions = <19 20>;
+            timeout-ms = <COMBO_TERM>;
+            layers = <4>;
+        };
 
         e_aigue {
             bindings = <&kp RA(E)>;
@@ -174,12 +180,24 @@
             timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
+        e_maj_aigue {
+            bindings = <&kp RA(LS(E))>;
+            key-positions = <20 21>;
+            timeout-ms = <COMBO_TERM>;
+            layers = <4>;
+        };
 
         a_grave {
             bindings = <&a_grave>;
             key-positions = <13 14>;
             timeout-ms = <COMBO_TERM>;
             layers = <0>;
+        };
+        a_maj_grave {
+            bindings = <&a_maj_grave>;
+            key-positions = <13 14>;
+            timeout-ms = <COMBO_TERM>;
+            layers = <4>;
         };
 
         ctrl_alt_sup {
@@ -195,12 +213,24 @@
             timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
+        e_maj_circ {
+            bindings = <&e_maj_circ>;
+            key-positions = <8 20>;
+            timeout-ms = <COMBO_TERM>;
+            layers = <4>;
+        };
 
         e_trema {
             bindings = <&e_trema>;
             key-positions = <20 32>;
             timeout-ms = <COMBO_TERM>;
             layers = <0>;
+        };
+        e_maj_trema {
+            bindings = <&e_maj_trema>;
+            key-positions = <20 32>;
+            timeout-ms = <COMBO_TERM>;
+            layers = <4>;
         };
 
         c_cedille {
@@ -209,7 +239,14 @@
             timeout-ms = <COMBO_TERM>;
             layers = <0>;
         };
+        c_maj_cedille {
+            bindings = <&kp RA(LS(C))>;
+            key-positions = <27 28>;
+            timeout-ms = <COMBO_TERM>;
+            layers = <4>;
+        };
     };
+
 
     keymap {
         compatible = "zmk,keymap";
