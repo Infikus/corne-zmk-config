@@ -259,9 +259,9 @@
             layers = <0>;
         };
 
-        new_combo {
+        escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
+            key-positions = <3 4>;
             timeout-ms = <30>;
             layers = <0>;
         };
