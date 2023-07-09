@@ -239,14 +239,14 @@
         };
 
         c_cedille {
-            bindings = <&kp RA(C)>;
+            bindings = <&kp RA(COMMA)>;
             key-positions = <27 28>;
             timeout-ms = <30>;
             layers = <0>;
         };
 
         c_maj_cedille {
-            bindings = <&kp RA(LS(C))>;
+            bindings = <&kp RA(LS(COMMA))>;
             key-positions = <27 28>;
             timeout-ms = <30>;
             layers = <4>;
@@ -286,10 +286,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp DOUBLE_QUOTES  &kp CARET  &kp GRAVE  &kp SINGLE_QUOTE  &trans         &caret       &kp AMPS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR  &kp PIPE
-    &trans             &trans     &trans     &trans            &trans  &trans         &kp AT  &kp AMPERSAND              &kp LBKT               &kp RBKT    &kp BSLH    &grave
-    &trans             &trans     &trans     &trans            &trans  &trans    &kp PERCENT         &kp LT              &kp LBRC               &kp RBRC      &kp GT    &tilde
-                                             &trans            &trans  &trans         &trans         &trans                &trans
+&kp ESCAPE  &kp DOUBLE_QUOTES  &kp CARET  &kp GRAVE  &kp SINGLE_QUOTE         &trans         &caret      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp PIPE
+    &trans             &trans     &trans     &trans            &trans  &double_quote         &kp AT  &kp AMPERSAND        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp DOLLAR    &grave
+    &trans             &trans     &trans     &trans     &kp SEMICOLON      &kp COLON    &kp PERCENT         &kp LT      &kp LEFT_BRACKET      &kp RIGHT_BRACKET         &kp GT    &tilde
+                                             &trans            &trans         &trans         &trans         &trans                &trans
             >;
         };
 
