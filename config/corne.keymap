@@ -258,6 +258,13 @@
             timeout-ms = <30>;
             layers = <0>;
         };
+
+        new_combo {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
     };
 
     keymap {
