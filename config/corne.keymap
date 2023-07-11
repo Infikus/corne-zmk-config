@@ -240,14 +240,14 @@
 
         c_cedille {
             bindings = <&kp RA(COMMA)>;
-            key-positions = <27 28>;
+            key-positions = <27 26>;
             timeout-ms = <30>;
             layers = <0>;
         };
 
         c_maj_cedille {
             bindings = <&kp RA(LS(COMMA))>;
-            key-positions = <27 28>;
+            key-positions = <27 26>;
             timeout-ms = <30>;
             layers = <4>;
         };
@@ -256,14 +256,14 @@
             bindings = <&kp UNDER>;
             key-positions = <32 33>;
             timeout-ms = <30>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <3 4>;
             timeout-ms = <30>;
-            layers = <0>;
+            layers = <0 4 1 2 3>;
         };
     };
 
@@ -295,7 +295,7 @@
             bindings = <
 &kp ESCAPE  &kp DOUBLE_QUOTES  &kp CARET  &kp GRAVE  &kp SINGLE_QUOTE         &trans         &caret      &kp EQUAL        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp BACKSLASH  &kp PIPE
     &trans             &trans     &trans     &trans            &trans  &double_quote         &kp AT  &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp DOLLAR    &grave
-    &trans             &trans     &trans     &trans     &kp SEMICOLON      &kp COLON    &kp PERCENT         &kp LT      &kp LEFT_BRACKET      &kp RIGHT_BRACKET         &kp GT    &tilde
+    &trans             &trans     &trans  &kp SPACE     &kp SEMICOLON      &kp COLON    &kp PERCENT         &kp LT      &kp LEFT_BRACKET      &kp RIGHT_BRACKET         &kp GT    &tilde
                                              &trans            &trans         &trans         &trans         &trans                &trans
             >;
         };
@@ -304,7 +304,7 @@
             bindings = <
 &kp ESCAPE  &kp N1         &kp N2                 &kp N3                   &kp N4  &kp N5       &kp N6        &kp N7        &kp N8  &kp N9     &kp N0  &trans
     &trans  &trans  &hml LALT DOT  &hml LEFT_SHIFT COMMA  &hml LEFT_CONTROL EQUAL  &trans     &kp STAR        &kp N4        &kp N5  &kp N6  &kp MINUS  &trans
-    &trans  &trans         &trans                 &trans                   &trans  &trans    &kp SLASH  &kp NUMBER_1        &kp N2  &kp N3   &kp PLUS  &trans
+    &trans  &trans         &trans              &kp SPACE                   &trans  &trans    &kp SLASH  &kp NUMBER_1        &kp N2  &kp N3   &kp PLUS  &trans
                                                   &trans                   &trans  &trans       &trans        &trans  &kp NUMBER_0
             >;
         };
