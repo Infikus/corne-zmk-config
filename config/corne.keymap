@@ -278,10 +278,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp LEFT_BRACE            &kp Q            &kp W              &kp F         &kp P      &kp B      &kp J          &kp L               &kp U             &kp Y            &quote        &kp MINUS
-    &caps_word  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T      &kp G      &kp M   &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O    &kp SEMICOLON
-     &kp EQUAL            &kp Z            &kp X              &kp C         &kp D      &kp V      &kp K          &kp H           &kp COMMA           &kp DOT          &kp FSLH  &kp EXCLAMATION
-                                                              &mo 4   &lt 1 SPACE  &lt 2 TAB    &kp RET  &kp BACKSPACE           &lt 3 DEL
+   &caps_word            &kp Q            &kp W              &kp F         &kp P      &kp B      &kp J          &kp L               &kp U             &kp Y            &quote        &kp MINUS
+&double_quote  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T      &kp G      &kp M   &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O    &kp SEMICOLON
+    &kp EQUAL            &kp Z            &kp X              &kp C         &kp D      &kp V      &kp K          &kp H           &kp COMMA           &kp DOT          &kp FSLH  &kp EXCLAMATION
+                                                             &mo 4   &lt 1 SPACE  &lt 2 TAB    &kp RET  &kp BACKSPACE           &lt 3 DEL
             >;
         };
 
@@ -293,7 +293,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp DOUBLE_QUOTES  &kp CARET  &kp GRAVE  &kp SINGLE_QUOTE         &trans         &caret      &kp EQUAL        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp BACKSLASH  &kp PIPE
+&kp ESCAPE  &kp DOUBLE_QUOTES  &kp CARET  &kp GRAVE  &kp SINGLE_QUOTE         &quote         &caret      &kp EQUAL        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp BACKSLASH  &kp PIPE
     &trans             &trans     &trans     &trans            &trans  &double_quote         &kp AT  &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp DOLLAR    &grave
     &trans             &trans     &trans  &kp SPACE     &kp SEMICOLON      &kp COLON    &kp PERCENT         &kp LT      &kp LEFT_BRACKET      &kp RIGHT_BRACKET         &kp GT    &tilde
                                              &trans            &trans         &trans         &trans         &trans                &trans
@@ -332,10 +332,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp LEFT_PARENTHESIS            &kp LS(Q)            &kp LS(W)              &kp LS(F)         &kp LS(P)  &kp LS(B)    &kp LS(J)         &kp LS(L)               &kp LS(U)             &kp LS(Y)         &double_quote      &kp LS(MINUS)
-      &kp LEFT_BRACE  &hml LEFT_GUI LS(A)  &hml LEFT_ALT LS(R)  &hml LEFT_SHIFT LS(S)  &hml LCTRL LS(T)  &kp LS(G)    &kp LS(M)  &hmr RCTRL LS(N)  &hmr RIGHT_SHIFT LS(E)  &hmr RIGHT_ALT LS(I)  &hmr RIGHT_GUI LS(O)  &kp LS(SEMICOLON)
-           &kp EQUAL            &kp LS(Z)            &kp LS(X)              &kp LS(C)         &kp LS(D)  &kp LS(V)    &kp LS(K)         &kp LS(H)           &kp LS(COMMA)           &kp LS(DOT)          &kp LS(FSLH)    &kp EXCLAMATION
-                                                                       &kp LEFT_SHIFT       &lt 1 SPACE  &lt 2 TAB      &kp RET     &kp BACKSPACE               &lt 3 DEL
+    &caps_word            &kp LS(Q)            &kp LS(W)              &kp LS(F)         &kp LS(P)  &kp LS(B)    &kp LS(J)         &kp LS(L)               &kp LS(U)             &kp LS(Y)         &double_quote      &kp LS(MINUS)
+&kp LEFT_BRACE  &hml LEFT_GUI LS(A)  &hml LEFT_ALT LS(R)  &hml LEFT_SHIFT LS(S)  &hml LCTRL LS(T)  &kp LS(G)    &kp LS(M)  &hmr RCTRL LS(N)  &hmr RIGHT_SHIFT LS(E)  &hmr RIGHT_ALT LS(I)  &hmr RIGHT_GUI LS(O)  &kp LS(SEMICOLON)
+     &kp EQUAL            &kp LS(Z)            &kp LS(X)              &kp LS(C)         &kp LS(D)  &kp LS(V)    &kp LS(K)         &kp LS(H)           &kp LS(COMMA)           &kp LS(DOT)          &kp LS(FSLH)    &kp EXCLAMATION
+                                                                 &kp LEFT_SHIFT       &lt 1 SPACE  &lt 2 TAB      &kp RET     &kp BACKSPACE               &lt 3 DEL
             >;
         };
     };
