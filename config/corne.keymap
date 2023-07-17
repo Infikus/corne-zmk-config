@@ -151,7 +151,6 @@
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;// delay positional check until key-release
         };
-
         hml_shift: hml_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT_SHIFT";
@@ -182,7 +181,6 @@
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;// delay positional check until key-release
         };
-
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -316,10 +314,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-   &caps_word            &kp Q            &kp W              &kp F         &kp P      &kp B      &kp J          &kp L               &kp U             &kp Y            &quote        &kp MINUS
-&kp AMPERSAND  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T      &kp G      &kp M   &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O         &kp STAR
-    &kp EQUAL            &kp Z            &kp X              &kp C         &kp D      &kp V      &kp K          &kp H           &kp COMMA           &kp DOT          &kp FSLH  &kp EXCLAMATION
-                                                             &mo 4   &lt 1 SPACE  &lt 2 TAB    &kp RET  &kp BACKSPACE           &lt 3 DEL
+   &caps_word            &kp Q            &kp W           &kp F         &kp P      &kp B      &kp J          &kp L           &kp U             &kp Y            &quote        &kp MINUS
+&kp AMPERSAND  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml_shift 4 S  &hml LCTRL T      &kp G      &kp M   &hmr RCTRL N  &hmr_shift 4 E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O         &kp STAR
+    &kp EQUAL            &kp Z            &kp X           &kp C         &kp D      &kp V      &kp K          &kp H       &kp COMMA           &kp DOT          &kp FSLH  &kp EXCLAMATION
+                                                          &mo 4   &lt 1 SPACE  &lt 2 TAB    &kp RET  &kp BACKSPACE       &lt 3 DEL
             >;
         };
 
@@ -370,10 +368,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&caps_word            &kp LS(Q)            &kp LS(W)              &kp LS(F)         &kp LS(P)  &kp LS(B)    &kp LS(J)         &kp LS(L)               &kp LS(U)             &kp LS(Y)         &double_quote  &kp LS(MINUS)
-  &kp HASH  &hml LEFT_GUI LS(A)  &hml LEFT_ALT LS(R)  &hml LEFT_SHIFT LS(S)  &hml LCTRL LS(T)  &kp LS(G)    &kp LS(M)  &hmr RCTRL LS(N)  &hmr RIGHT_SHIFT LS(E)  &hmr RIGHT_ALT LS(I)  &hmr RIGHT_GUI LS(O)         &arrow
- &kp EQUAL            &kp LS(Z)            &kp LS(X)              &kp LS(C)         &kp LS(D)  &kp LS(V)    &kp LS(K)         &kp LS(H)                &kp SEMI             &kp COLON          &kp LS(FSLH)       &kp PIPE
-                                                             &kp LEFT_SHIFT       &lt 1 SPACE  &lt 2 TAB      &kp RET     &kp BACKSPACE               &lt 3 DEL
+&caps_word            &kp LS(Q)            &kp LS(W)       &kp LS(F)         &kp LS(P)  &kp LS(B)    &kp LS(J)         &kp LS(L)  &kp LS(U)             &kp LS(Y)         &double_quote  &kp LS(MINUS)
+  &kp HASH  &hml LEFT_GUI LS(A)  &hml LEFT_ALT LS(R)           &kp S  &hml LCTRL LS(T)  &kp LS(G)    &kp LS(M)  &hmr RCTRL LS(N)      &kp E  &hmr RIGHT_ALT LS(I)  &hmr RIGHT_GUI LS(O)         &arrow
+ &kp EQUAL            &kp LS(Z)            &kp LS(X)       &kp LS(C)         &kp LS(D)  &kp LS(V)    &kp LS(K)         &kp LS(H)   &kp SEMI             &kp COLON          &kp LS(FSLH)       &kp PIPE
+                                                      &kp LEFT_SHIFT       &lt 1 SPACE  &lt 2 TAB      &kp RET     &kp BACKSPACE  &lt 3 DEL
             >;
         };
     };
