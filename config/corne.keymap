@@ -160,7 +160,7 @@
             quick-tap-ms = <175>;// repeat on tap-into-hold
             global-quick-tap;
             bindings =
-                <&mo 4>,
+                <&mo>,
                 <&kp>;
 
             hold-trigger-key-positions = <KEYS_R THUMBS>;
@@ -175,7 +175,7 @@
             quick-tap-ms = <175>;// repeat on tap-into-hold
             global-quick-tap;
             bindings =
-                <&mo 4>,
+                <&mo>,
                 <&kp>;
 
             hold-trigger-key-positions = <KEYS_L THUMBS>;
