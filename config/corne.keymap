@@ -154,7 +154,7 @@
 
         hml_shift: hml_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_LEFT";
+            label = "HOMEROW_MODS_LEFT_SHIFT";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -169,7 +169,7 @@
         };
         hmr_shift: hmr_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_RIGHT";
+            label = "HOMEROW_MODS_RIGHT_SHIFT";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
