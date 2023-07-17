@@ -151,6 +151,38 @@
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;// delay positional check until key-release
         };
+
+        hml_shift: hml_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_LEFT";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;// repeat on tap-into-hold
+            global-quick-tap;
+            bindings =
+                <&mo 4>,
+                <&kp>;
+
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;// delay positional check until key-release
+        };
+        hmr_shift: hmr_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RIGHT";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;// repeat on tap-into-hold
+            global-quick-tap;
+            bindings =
+                <&mo 4>,
+                <&kp>;
+
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;// delay positional check until key-release
+        };
+
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
