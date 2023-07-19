@@ -353,10 +353,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE        &trans                       &trans              &trans                  &trans        &trans       &kp H     &kp J   &kp K      &kp L  &trans  &trans
-    &trans        &trans  &hml LEFT_ALT C_VOLUME_DOWN  &hml LSHIFT K_MUTE  &hml LCTRL C_VOLUME_UP        &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 0                 &bt BT_SEL 1        &bt BT_SEL 2            &bt BT_SEL 3  &bt BT_SEL 4      &trans    &trans  &trans     &trans  &trans  &trans
-                                                                   &trans                  &trans        &trans      &trans    &trans  &trans
+&kp ESCAPE        &trans  &kp C_VOLUME_DOWN    &kp K_MUTE  &kp C_VOLUME_UP        &trans       &kp H     &kp J   &kp K      &kp L  &trans  &trans
+    &trans        &trans             &trans        &trans           &trans        &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4      &trans    &trans  &trans     &trans  &trans  &trans
+                                                   &trans           &trans        &trans      &trans    &trans  &trans
             >;
         };
 
@@ -368,10 +368,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&caps_word            &kp LS(Q)            &kp LS(W)       &kp LS(F)         &kp LS(P)  &kp LS(B)    &kp LS(J)         &kp LS(L)  &kp LS(U)             &kp LS(Y)         &double_quote  &kp LS(MINUS)
-  &kp HASH  &hml LEFT_GUI LS(A)  &hml LEFT_ALT LS(R)       &kp LS(S)  &hml LCTRL LS(T)  &kp LS(G)    &kp LS(M)  &hmr RCTRL LS(N)  &kp LS(E)  &hmr RIGHT_ALT LS(I)  &hmr RIGHT_GUI LS(O)         &arrow
- &kp EQUAL            &kp LS(Z)            &kp LS(X)       &kp LS(C)         &kp LS(D)  &kp LS(V)    &kp LS(K)         &kp LS(H)   &kp SEMI             &kp COLON          &kp LS(FSLH)       &kp PIPE
-                                                      &kp LEFT_SHIFT       &lt 1 SPACE  &lt 2 TAB      &kp LS(RET)     &kp BACKSPACE  &lt 3 DEL
+&caps_word            &kp LS(Q)            &kp LS(W)       &kp LS(F)         &kp LS(P)  &kp LS(B)      &kp LS(J)         &kp LS(L)  &kp LS(U)             &kp LS(Y)         &double_quote  &kp LS(MINUS)
+  &kp HASH  &hml LEFT_GUI LS(A)  &hml LEFT_ALT LS(R)       &kp LS(S)  &hml LCTRL LS(T)  &kp LS(G)      &kp LS(M)  &hmr RCTRL LS(N)  &kp LS(E)  &hmr RIGHT_ALT LS(I)  &hmr RIGHT_GUI LS(O)         &arrow
+ &kp EQUAL            &kp LS(Z)            &kp LS(X)       &kp LS(C)         &kp LS(D)  &kp LS(V)      &kp LS(K)         &kp LS(H)   &kp SEMI             &kp COLON          &kp LS(FSLH)       &kp PIPE
+                                                      &kp LEFT_SHIFT       &lt 1 SPACE  &lt 2 TAB    &kp LS(RET)     &kp BACKSPACE  &lt 3 DEL
             >;
         };
     };
