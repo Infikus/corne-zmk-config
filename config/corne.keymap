@@ -314,10 +314,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-   &caps_word            &kp Q            &kp W           &kp F         &kp P         &kp B      &kp J          &kp L           &kp U             &kp Y            &quote        &kp MINUS
-&kp AMPERSAND  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml_shift 4 S  &hml LCTRL T         &kp G      &kp M   &hmr RCTRL N  &hmr_shift 4 E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O         &kp STAR
-    &kp EQUAL            &kp Z            &kp X           &kp C         &kp D         &kp V      &kp K          &kp H       &kp COMMA           &kp DOT          &kp FSLH  &kp EXCLAMATION
-                                                          &mo 4   &lt 1 SPACE  &lt 2 ESCAPE    &kp RET  &kp BACKSPACE       &lt 3 DEL
+    &trans            &kp Q            &kp W           &kp F         &kp P             &kp B          &kp J          &kp L           &kp U            &kp Y         &kp MINUS           &trans
+&kp ESCAPE  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml_shift 4 S  &hml LCTRL T  &hml RIGHT_ALT G    &hmr RALT M   &hmr RCTRL N  &hmr_shift 4 E  &hmr LEFT_ALT I  &hmr RIGHT_GUI O           &quote
+&caps_word            &kp Z            &kp X           &kp C         &kp D             &kp V          &kp K          &kp H       &kp COMMA          &kp DOT          &kp FSLH  &kp EXCLAMATION
+                                                       &mo 4   &lt 1 SPACE      &lt 2 ESCAPE    &lt 3 ENTER  &kp BACKSPACE      &kp DELETE
             >;
         };
 
@@ -329,19 +329,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp DOUBLE_QUOTES  &kp CARET  &kp GRAVE  &kp SINGLE_QUOTE         &quote         &caret      &kp EQUAL        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp BACKSLASH  &kp PIPE
-    &trans             &trans     &trans     &trans            &trans  &double_quote         &kp AT  &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp DOLLAR    &grave
-    &trans             &trans     &trans  &kp SPACE     &kp SEMICOLON      &kp COLON    &kp PERCENT         &kp LT      &kp LEFT_BRACKET      &kp RIGHT_BRACKET         &kp GT    &tilde
-                                             &trans            &trans         &trans         &trans         &trans                &trans
+&kp ESCAPE    &quote  &kp LESS_THAN  &kp GREATER_THAN  &double_quote    &grave    &kp AMPS  &kp UNDER      &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &kp PRCNT  &kp PIPE
+    &trans  &kp EXCL      &kp MINUS          &kp PLUS      &kp EQUAL  &kp HASH    &kp PIPE  &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp SEMI    &grave
+    &trans    &caret       &kp FSLH          &kp STAR       &kp BSLH    &kp AT      &tilde   &kp DLLR        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp QUESTION    &tilde
+                                               &trans         &trans    &trans      &trans     &trans                &trans
             >;
         };
 
         Numbers {
             bindings = <
-&kp ESCAPE  &kp N1         &kp N2                 &kp N3                   &kp N4  &kp N5       &kp N6        &kp N7        &kp N8  &kp N9     &kp N0  &trans
-    &trans  &trans  &hml LALT DOT  &hml LEFT_SHIFT COMMA  &hml LEFT_CONTROL EQUAL  &trans     &kp STAR        &kp N4        &kp N5  &kp N6  &kp MINUS  &trans
-    &trans  &trans         &trans              &kp SPACE                   &trans  &trans    &kp SLASH  &kp NUMBER_1        &kp N2  &kp N3   &kp PLUS  &trans
-                                                  &trans                   &trans  &trans       &trans        &trans  &kp NUMBER_0
+&trans    &trans        &trans    &kp DOT  &kp COMMA         &trans    &trans        &kp N7        &kp N8  &kp N9        &trans  &trans
+&trans  &sk LGUI  &sk LEFT_ALT      &sl 4  &sk LCTRL  &sk RIGHT_ALT    &trans        &kp N4        &kp N5  &kp N6  &kp NUMBER_0  &trans
+&trans    &trans        &trans  &kp SPACE     &trans         &trans    &trans  &kp NUMBER_1        &kp N2  &kp N3        &trans  &trans
+                                   &trans     &trans         &trans    &trans        &trans  &kp NUMBER_0
             >;
         };
 
@@ -368,10 +368,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&caps_word            &kp LS(Q)            &kp LS(W)       &kp LS(F)         &kp LS(P)  &kp LS(B)      &kp LS(J)         &kp LS(L)  &kp LS(U)             &kp LS(Y)         &double_quote  &kp LS(MINUS)
-  &kp HASH  &hml LEFT_GUI LS(A)  &hml LEFT_ALT LS(R)       &kp LS(S)  &hml LCTRL LS(T)  &kp LS(G)      &kp LS(M)  &hmr RCTRL LS(N)  &kp LS(E)  &hmr RIGHT_ALT LS(I)  &hmr RIGHT_GUI LS(O)         &arrow
- &kp EQUAL            &kp LS(Z)            &kp LS(X)       &kp LS(C)         &kp LS(D)  &kp LS(V)      &kp LS(K)         &kp LS(H)   &kp SEMI             &kp COLON          &kp LS(FSLH)       &kp PIPE
-                                                      &kp LEFT_SHIFT       &lt 1 SPACE  &lt 2 TAB    &kp LS(RET)     &kp BACKSPACE  &lt 3 DEL
+&trans            &kp LS(Q)            &kp LS(W)  &kp LS(F)         &kp LS(P)  &kp LS(B)    &kp LS(J)         &kp LS(L)  &kp LS(U)             &kp LS(Y)                &trans         &trans
+&trans  &hml LEFT_GUI LS(A)  &hml LEFT_ALT LS(R)  &kp LS(S)  &hml LCTRL LS(T)  &kp LS(G)    &kp LS(M)  &hmr RCTRL LS(N)  &kp LS(E)  &hmr RIGHT_ALT LS(I)  &hmr RIGHT_GUI LS(O)  &double_quote
+&trans            &kp LS(Z)            &kp LS(X)  &kp LS(C)         &kp LS(D)  &kp LS(V)    &kp LS(K)         &kp LS(H)   &kp SEMI             &kp COLON          &kp LS(FSLH)       &kp PIPE
+                                                     &trans            &trans     &trans       &trans            &trans     &trans
             >;
         };
     };
