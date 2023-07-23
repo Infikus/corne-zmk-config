@@ -246,34 +246,6 @@
             slow-release;
         };
 
-        e_circ {
-            bindings = <&e_circ>;
-            key-positions = <8 20>;
-            timeout-ms = <30>;
-            layers = <0>;
-        };
-
-        e_maj_circ {
-            bindings = <&e_maj_circ>;
-            key-positions = <8 20>;
-            timeout-ms = <30>;
-            layers = <4>;
-        };
-
-        e_trema {
-            bindings = <&e_trema>;
-            key-positions = <20 32>;
-            timeout-ms = <30>;
-            layers = <0>;
-        };
-
-        e_maj_trema {
-            bindings = <&e_maj_trema>;
-            key-positions = <20 32>;
-            timeout-ms = <30>;
-            layers = <4>;
-        };
-
         c_cedille {
             bindings = <&kp RA(COMMA)>;
             key-positions = <27 26>;
@@ -292,7 +264,7 @@
             bindings = <&kp UNDER>;
             key-positions = <32 33>;
             timeout-ms = <30>;
-            layers = <0 4>;
+            layers = <0 4 2>;
         };
 
         tab {
@@ -300,6 +272,32 @@
             key-positions = <3 2>;
             timeout-ms = <30>;
             layers = <0 4 1 2 3>;
+        };
+
+        dead_quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <8 9>;
+            timeout-ms = <30>;
+            layers = <0 4>;
+        };
+
+        dead_grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <7 8>;
+            layers = <0 4>;
+            timeout-ms = <30>;
+        };
+
+        dead_caret {
+            bindings = <&kp CARET>;
+            key-positions = <2 3>;
+            timeout-ms = <30>;
+            layers = <0 4>;
+        };
+
+        dead_trema {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <3 4>;
         };
     };
 
