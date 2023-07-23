@@ -327,10 +327,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE    &quote  &kp LESS_THAN  &kp GREATER_THAN  &double_quote    &grave    &kp AMPS  &kp UNDER      &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &kp PRCNT  &kp PIPE
-    &trans  &kp EXCL      &kp MINUS          &kp PLUS      &kp EQUAL  &kp HASH    &kp PIPE  &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp SEMI    &grave
-    &trans    &caret       &kp FSLH          &kp STAR       &kp BSLH    &kp AT      &tilde   &kp DLLR        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp QUESTION    &tilde
-                                               &trans         &trans    &trans      &trans     &trans                &trans
+&trans    &quote  &kp LESS_THAN  &kp GREATER_THAN  &double_quote    &grave    &kp AMPS  &kp UNDER      &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &kp PRCNT  &kp PIPE
+&trans  &kp EXCL      &kp MINUS          &kp PLUS      &kp EQUAL  &kp HASH    &kp PIPE  &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp SEMI    &grave
+&trans    &caret       &kp FSLH          &kp STAR       &kp BSLH    &kp AT      &tilde   &kp DLLR        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp QUESTION    &tilde
+                                           &trans         &trans    &trans      &trans     &trans                &trans
             >;
         };
 
@@ -351,10 +351,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE        &trans  &kp C_VOLUME_DOWN    &kp K_MUTE  &kp C_VOLUME_UP        &trans       &kp H     &kp J   &kp K      &kp L  &trans  &trans
-    &trans        &trans             &trans        &trans           &trans        &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4      &trans    &trans  &trans     &trans  &trans  &trans
-                                                   &trans           &trans        &trans      &trans    &trans  &trans
+    &trans        &trans  &kp C_VOLUME_DOWN    &kp K_MUTE  &kp C_VOLUME_UP        &trans       &kp H          &kp J      &kp K      &kp L  &trans  &trans
+    &trans      &sk LGUI           &sk LALT         &sl 4        &sk LCTRL      &sk RALT    &kp LEFT       &kp DOWN     &kp UP  &kp RIGHT  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4    &kp HOME  &kp PAGE_DOWN  &kp PG_UP    &kp END  &trans  &trans
+                                                   &trans           &trans        &trans      &trans         &trans     &trans
             >;
         };
 
@@ -368,8 +368,17 @@
             bindings = <
 &trans            &kp LS(Q)            &kp LS(W)  &kp LS(F)         &kp LS(P)  &kp LS(B)    &kp LS(J)         &kp LS(L)  &kp LS(U)             &kp LS(Y)                &trans         &trans
 &trans  &hml LEFT_GUI LS(A)  &hml LEFT_ALT LS(R)  &kp LS(S)  &hml LCTRL LS(T)  &kp LS(G)    &kp LS(M)  &hmr RCTRL LS(N)  &kp LS(E)  &hmr RIGHT_ALT LS(I)  &hmr RIGHT_GUI LS(O)  &double_quote
-&trans            &kp LS(Z)            &kp LS(X)  &kp LS(C)         &kp LS(D)  &kp LS(V)    &kp LS(K)         &kp LS(H)   &kp SEMI             &kp COLON          &kp LS(FSLH)       &kp PIPE
+&trans            &kp LS(Z)            &kp LS(X)  &kp LS(C)         &kp LS(D)  &kp LS(V)    &kp LS(K)         &kp LS(H)   &kp SEMI             &kp COLON          &kp LS(FSLH)         &trans
                                                      &trans            &trans     &trans       &trans            &trans     &trans
+            >;
+        };
+
+        Function {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
