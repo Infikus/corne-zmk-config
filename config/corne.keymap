@@ -270,7 +270,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <27 28>;
+            key-positions = <31 32>;
             timeout-ms = <30>;
             layers = <0 4 1 2 3 5>;
         };
@@ -299,6 +299,8 @@
         dead_trema {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <3 4>;
+            timeout-ms = <30>;
+            layers = <0 4>;
         };
 
         function {
@@ -306,6 +308,19 @@
             key-positions = <37 40>;
             layers = <0>;
             timeout-ms = <30>;
+        };
+
+        space_symbol {
+            bindings = <&kp SPACE>;
+            key-positions = <20 21>;
+            timeout-ms = <30>;
+            layers = <1>;
+        };
+
+        space_symbol_2 {
+            bindings = <&kp SPACE>;
+            key-positions = <15 14>;
+            layers = <1>;
         };
     };
 
