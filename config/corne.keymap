@@ -334,10 +334,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-    &trans            &kp Q            &kp W           &kp F         &kp P             &kp B          &kp J          &kp L           &kp U            &kp Y         &kp MINUS           &trans
-&kp ESCAPE  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml_shift 4 S  &hml LCTRL T  &hml RIGHT_ALT G    &hmr RALT M   &hmr RCTRL N  &hmr_shift 4 E  &hmr LEFT_ALT I  &hmr RIGHT_GUI O           &quote
-&caps_word            &kp Z            &kp X           &kp C         &kp D             &kp V          &kp K          &kp H       &kp COMMA          &kp DOT          &kp FSLH  &kp EXCLAMATION
-                                                       &mo 4   &lt 1 SPACE      &lt 2 ESCAPE    &lt 3 ENTER  &kp BACKSPACE      &kp DELETE
+    &kp ESCAPE            &kp Q            &kp W           &kp F         &kp P             &kp B          &kp J          &kp L           &kp U            &kp Y         &kp MINUS           &trans
+&kp LEFT_SHIFT  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml_shift 4 S  &hml LCTRL T  &hml RIGHT_ALT G    &hmr RALT M   &hmr RCTRL N  &hmr_shift 4 E  &hmr LEFT_ALT I  &hmr RIGHT_GUI O           &quote
+    &caps_word            &kp Z            &kp X           &kp C         &kp D             &kp V          &kp K          &kp H       &kp COMMA          &kp DOT          &kp FSLH  &kp EXCLAMATION
+                                                           &mo 4   &lt 1 SPACE      &lt 2 ESCAPE    &lt 3 ENTER  &kp BACKSPACE      &kp DELETE
             >;
         };
 
@@ -349,9 +349,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans    &quote  &kp LESS_THAN  &kp GREATER_THAN  &double_quote    &grave    &kp UNDER  &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &kp PRCNT  &trans
+&trans    &quote  &kp LESS_THAN  &kp GREATER_THAN  &double_quote    &grave    &kp UNDER  &kp AMPERSAND        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp PRCNT  &trans
 &trans  &kp EXCL      &kp MINUS          &kp PLUS      &kp EQUAL  &kp HASH     &kp PIPE      &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp SEMI  &trans
-&trans    &caret       &kp FSLH          &kp STAR       &kp BSLH    &kp AT       &tilde       &kp DLLR        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp QUESTION  &trans
+&trans    &caret       &kp FSLH          &kp STAR       &kp BSLH    &kp AT       &tilde       &kp DLLR      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp QUESTION  &trans
                                            &trans         &trans    &trans       &trans         &trans                &trans
             >;
         };
