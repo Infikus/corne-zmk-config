@@ -326,6 +326,7 @@
             bindings = <&kp ENTER>;
             key-positions = <21 22>;
             layers = <0 1 2 3 5 4>;
+            timeout-ms = <25>;
         };
     };
 
