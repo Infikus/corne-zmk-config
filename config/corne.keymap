@@ -321,6 +321,12 @@
             key-positions = <15 14>;
             layers = <1>;
         };
+
+        new_combo {
+            bindings = <&kp ENTER>;
+            key-positions = <21 22>;
+            layers = <0 1 2 3 5 4>;
+        };
     };
 
     keymap {
@@ -337,7 +343,7 @@
     &kp ESCAPE            &kp Q            &kp W           &kp F         &kp P             &kp B          &kp J          &kp L           &kp U            &kp Y         &kp MINUS           &trans
 &kp LEFT_SHIFT  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml_shift 4 S  &hml LCTRL T  &hml RIGHT_ALT G    &hmr RALT M   &hmr RCTRL N  &hmr_shift 4 E  &hmr LEFT_ALT I  &hmr RIGHT_GUI O           &quote
     &caps_word            &kp Z            &kp X           &kp C         &kp D             &kp V          &kp K          &kp H       &kp COMMA          &kp DOT          &kp FSLH  &kp EXCLAMATION
-                                                           &mo 4   &lt 1 SPACE      &lt 2 ESCAPE    &lt 3 ENTER  &kp BACKSPACE      &kp DELETE
+                                                           &mo 4   &lt 1 SPACE      &lt 2 ESCAPE          &mo 3  &kp BACKSPACE      &kp DELETE
             >;
         };
 
