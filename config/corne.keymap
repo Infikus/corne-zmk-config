@@ -322,7 +322,7 @@
             layers = <1>;
         };
 
-        new_combo {
+        enter {
             bindings = <&kp ENTER>;
             key-positions = <21 20 19>;
             layers = <0 1 2 3 5 4>;
