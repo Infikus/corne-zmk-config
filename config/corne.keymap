@@ -197,6 +197,13 @@
     combos {
         compatible = "zmk,combos";
 
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <21 20 19>;
+            layers = <0 1 2 3 5 4>;
+            timeout-ms = <30>;
+        };
+
         e_grave {
             bindings = <&e_grave>;
             key-positions = <19 20>;
@@ -322,12 +329,6 @@
             layers = <1>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <21 20 19>;
-            layers = <0 1 2 3 5 4>;
-            timeout-ms = <30>;
-        };
     };
 
     keymap {
