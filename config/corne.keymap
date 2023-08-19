@@ -199,7 +199,7 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <21 20 19>;
+            key-positions = <31 32 33>;
             timeout-ms = <30>;
         };
 
@@ -327,7 +327,6 @@
             key-positions = <15 14>;
             layers = <1>;
         };
-
     };
 
     keymap {
