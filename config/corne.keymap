@@ -201,6 +201,7 @@
             bindings = <&kp ENTER>;
             key-positions = <31 32 33>;
             timeout-ms = <30>;
+            layers = <0 1 5 2 3>;
         };
 
         e_grave {
@@ -331,6 +332,13 @@
         shift_tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <31 32>;
+            layers = <4>;
+            timeout-ms = <30>;
+        };
+
+        shift_enter {
+            bindings = <&kp LS(ENTER)>;
+            key-positions = <>;
             layers = <4>;
             timeout-ms = <30>;
         };
