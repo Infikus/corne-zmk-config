@@ -204,6 +204,13 @@
             layers = <0 1 5 2 3>;
         };
 
+        shift_enter {
+            bindings = <&kp LS(ENTER)>;
+            key-positions = <31 32 33>;
+            timeout-ms = <30>;
+            layers = <4>;
+        };
+
         e_grave {
             bindings = <&e_grave>;
             key-positions = <19 20>;
@@ -336,12 +343,6 @@
             timeout-ms = <30>;
         };
 
-        shift_enter {
-            bindings = <&kp LS(ENTER)>;
-            key-positions = <>;
-            layers = <4>;
-            timeout-ms = <30>;
-        };
     };
 
     keymap {
