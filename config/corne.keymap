@@ -129,9 +129,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;// repeat on tap-into-hold
             global-quick-tap;
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;// delay positional check until key-release
@@ -144,9 +142,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;// repeat on tap-into-hold
             global-quick-tap;
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;// delay positional check until key-release
@@ -159,9 +155,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;// repeat on tap-into-hold
             global-quick-tap;
-            bindings =
-                <&mo>,
-                <&kp>;
+            bindings = <&mo>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;// delay positional check until key-release
@@ -174,9 +168,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;// repeat on tap-into-hold
             global-quick-tap;
-            bindings =
-                <&mo>,
-                <&kp>;
+            bindings = <&mo>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;// delay positional check until key-release
@@ -188,9 +180,7 @@
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -226,14 +216,14 @@
         };
 
         e_aigue {
-            bindings = <&kp RA(E)>;
+            bindings = <&e_aigue>;
             key-positions = <20 21>;
             timeout-ms = <30>;
             layers = <0>;
         };
 
         e_maj_aigue {
-            bindings = <&kp RA(LS(E))>;
+            bindings = <&e_maj_aigue>;
             key-positions = <20 21>;
             timeout-ms = <30>;
             layers = <4>;
@@ -342,7 +332,6 @@
             layers = <4>;
             timeout-ms = <30>;
         };
-
     };
 
     keymap {
@@ -356,10 +345,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-    &kp ESCAPE            &kp Q            &kp W           &kp F         &kp P             &kp B          &kp J          &kp L           &kp U            &kp Y         &kp MINUS           &trans
-&kp LEFT_SHIFT  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml_shift 4 S  &hml LCTRL T  &hml RIGHT_ALT G    &hmr RALT M   &hmr RCTRL N  &hmr_shift 4 E  &hmr LEFT_ALT I  &hmr RIGHT_GUI O           &quote
-    &caps_word            &kp Z            &kp X           &kp C         &kp D             &kp V          &kp K          &kp H       &kp COMMA          &kp DOT          &kp FSLH  &kp EXCLAMATION
-                                                           &mo 4   &lt 1 SPACE      &lt 2 ESCAPE          &mo 3  &kp BACKSPACE      &kp DELETE
+&kp ESCAPE      &kp Q            &kp W            &kp F           &kp P         &kp B               &kp J        &kp L          &kp U           &kp Y            &kp MINUS         &trans
+&kp LEFT_SHIFT  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml_shift 4 S  &hml LCTRL T  &hml RIGHT_ALT G    &hmr RALT M  &hmr RCTRL N   &hmr_shift 4 E  &hmr LEFT_ALT I  &hmr RIGHT_GUI O  &quote
+&caps_word      &kp Z            &kp X            &kp C           &kp D         &kp V               &kp K        &kp H          &kp COMMA       &kp DOT          &kp FSLH          &kp EXCLAMATION
+                                                  &mo 4           &lt 1 SPACE   &lt 2 ESCAPE        &mo 3        &kp BACKSPACE  &kp DELETE
             >;
         };
 
@@ -371,19 +360,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans    &quote  &kp LESS_THAN  &kp GREATER_THAN  &double_quote    &grave    &kp UNDER  &kp AMPERSAND        &kp LEFT_BRACE        &kp RIGHT_BRACE     &kp PRCNT  &trans
-&trans  &kp EXCL      &kp MINUS          &kp PLUS      &kp EQUAL  &kp HASH     &kp PIPE      &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp SEMI  &trans
-&trans    &caret       &kp FSLH          &kp STAR       &kp BSLH    &kp AT       &tilde       &kp DLLR      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp QUESTION  &trans
-                                           &trans         &trans    &trans       &trans         &trans                &trans
+&trans  &quote    &kp LESS_THAN  &kp GREATER_THAN  &double_quote  &grave      &kp UNDER  &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PRCNT     &trans
+&trans  &kp EXCL  &kp MINUS      &kp PLUS          &kp EQUAL      &kp HASH    &kp PIPE   &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI      &trans
+&trans  &caret    &kp FSLH       &kp STAR          &kp BSLH       &kp AT      &tilde     &kp DLLR       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION  &trans
+                                 &trans            &trans         &trans      &trans     &trans         &trans
             >;
         };
 
         Numbers {
             bindings = <
-&trans    &trans    &trans     &kp DOT  &kp COMMA    &trans    &trans        &kp N7        &kp N8  &kp N9        &trans  &trans
-&trans  &kp LGUI  &kp LALT  &kp LSHIFT  &sk LCTRL  &kp RALT    &trans        &kp N4        &kp N5  &kp N6  &kp NUMBER_0  &trans
-&trans    &trans    &trans   &kp SPACE     &trans    &trans    &trans  &kp NUMBER_1        &kp N2  &kp N3        &trans  &trans
-                                &trans     &trans    &trans    &trans        &trans  &kp NUMBER_0
+&trans  &trans    &trans    &kp DOT     &kp COMMA  &trans      &trans  &kp N7        &kp N8        &kp N9  &trans        &trans
+&trans  &kp LGUI  &kp LALT  &kp LSHIFT  &sk LCTRL  &kp RALT    &trans  &kp N4        &kp N5        &kp N6  &kp NUMBER_0  &trans
+&trans  &trans    &trans    &kp SPACE   &trans     &trans      &trans  &kp NUMBER_1  &kp N2        &kp N3  &trans        &trans
+                            &trans      &trans     &trans      &trans  &trans        &kp NUMBER_0
             >;
         };
 
@@ -395,10 +384,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-    &trans        &trans  &kp C_VOLUME_DOWN   &kp K_MUTE2  &kp C_VOLUME_UP        &trans       &kp H          &kp J      &kp K      &kp L  &trans  &trans
-    &trans      &kp LGUI           &kp LALT    &kp LSHIFT        &sk LCTRL      &sk RALT    &kp LEFT       &kp DOWN     &kp UP  &kp RIGHT  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4    &kp HOME  &kp PAGE_DOWN  &kp PG_UP    &kp END  &trans  &trans
-                                                   &trans           &trans        &trans      &trans         &trans     &trans
+&trans      &trans        &kp C_VOLUME_DOWN  &kp K_MUTE2   &kp C_VOLUME_UP  &trans          &kp H     &kp J          &kp K      &kp L      &trans  &trans
+&trans      &kp LGUI      &kp LALT           &kp LSHIFT    &sk LCTRL        &sk RALT        &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4    &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans  &trans
+                                             &trans        &trans           &trans          &trans    &trans         &trans
             >;
         };
 
@@ -410,19 +399,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans            &kp LS(Q)            &kp LS(W)  &kp LS(F)         &kp LS(P)  &kp LS(B)        &kp LS(J)         &kp LS(L)  &kp LS(U)             &kp LS(Y)                &trans         &trans
-&trans  &hml LEFT_GUI LS(A)  &hml LEFT_ALT LS(R)  &kp LS(S)  &hml LCTRL LS(T)  &kp LS(G)        &kp LS(M)  &hmr RCTRL LS(N)  &kp LS(E)  &hmr RIGHT_ALT LS(I)  &hmr RIGHT_GUI LS(O)  &double_quote
-&trans            &kp LS(Z)            &kp LS(X)  &kp LS(C)         &kp LS(D)  &kp LS(V)        &kp LS(K)         &kp LS(H)   &kp SEMI             &kp COLON          &kp LS(FSLH)         &trans
-                                                     &trans            &trans     &trans    &kp LS(ENTER)            &trans     &trans
+&trans  &kp LS(Q)            &kp LS(W)            &kp LS(F)  &kp LS(P)         &kp LS(B)    &kp LS(J)      &kp LS(L)         &kp LS(U)  &kp LS(Y)             &trans                &trans
+&trans  &hml LEFT_GUI LS(A)  &hml LEFT_ALT LS(R)  &kp LS(S)  &hml LCTRL LS(T)  &kp LS(G)    &kp LS(M)      &hmr RCTRL LS(N)  &kp LS(E)  &hmr RIGHT_ALT LS(I)  &hmr RIGHT_GUI LS(O)  &double_quote
+&trans  &kp LS(Z)            &kp LS(X)            &kp LS(C)  &kp LS(D)         &kp LS(V)    &kp LS(K)      &kp LS(H)         &kp SEMI   &kp COLON             &kp LS(FSLH)          &trans
+                                                  &trans     &trans            &trans       &kp LS(ENTER)  &trans            &trans
             >;
         };
 
         Function {
             bindings = <
 &trans  &trans  &trans  &kp PRINTSCREEN  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans
-&trans  &trans  &trans       &kp LSHIFT  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans  &trans           &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &kp LSHIFT       &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans  &trans  &trans           &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                        &trans           &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
