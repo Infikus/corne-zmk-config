@@ -22,96 +22,112 @@
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE &kp SPACE>;
         };
+
         double_quote: double_quote {
             compatible = "zmk,behavior-macro";
             label = "DOUBLE_QUOTE";
             #binding-cells = <0>;
             bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
         };
+
         e_aigue: e_aigue {
             compatible = "zmk,behavior-macro";
             label = "E_AIGUE";
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE &kp E>;
         };
+
         e_grave: e_grave {
             compatible = "zmk,behavior-macro";
             label = "E_GRAVE";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp E>;
         };
+
         e_circ: e_circ {
             compatible = "zmk,behavior-macro";
             label = "E_CIRC";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp E>;
         };
+
         e_trema: e_trema {
             compatible = "zmk,behavior-macro";
             label = "E_TREMA";
             #binding-cells = <0>;
             bindings = <&kp LS(SINGLE_QUOTE) &kp E>;
         };
+
         e_maj_aigue: e_maj_aigue {
             compatible = "zmk,behavior-macro";
             label = "E_MAJ_AIGUE";
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE &kp LS(E)>;
         };
+
         e_maj_grave: e_maj_grave {
             compatible = "zmk,behavior-macro";
             label = "E_MAJ_GRAVE";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp LS(E)>;
         };
+
         e_maj_circ: e_maj_circ {
             compatible = "zmk,behavior-macro";
             label = "E_MAJ_CIRC";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(E)>;
         };
+
         e_maj_trema: e_maj_trema {
             compatible = "zmk,behavior-macro";
             label = "E_MAJ_TREMA";
             #binding-cells = <0>;
             bindings = <&kp LS(SINGLE_QUOTE) &kp LS(E)>;
         };
+
         a_grave: a_grave {
             compatible = "zmk,behavior-macro";
             label = "A_GRAVE";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp A>;
         };
+
         a_maj_grave: a_ma_grave {
             compatible = "zmk,behavior-macro";
             label = "A_MAJ_GRAVE";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp LS(A)>;
         };
+
         grave: grave {
             compatible = "zmk,behavior-macro";
             label = "GRAVE";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp SPACE>;
         };
+
         caret: caret {
             compatible = "zmk,behavior-macro";
             label = "CARET";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp SPACE>;
         };
+
         c_cedille: c_cedille {
             compatible = "zmk,behavior-macro";
             label = "C_CEDILLE";
             #binding-cells = <0>;
             bindings = <&kp RG(C)>;
         };
+
         tilde: tilde {
             compatible = "zmk,behavior-macro";
             label = "TILDE";
             #binding-cells = <0>;
             bindings = <&kp TILDE &kp SPACE>;
         };
+
         arrow: arrow {
             compatible = "zmk,behavior-macro";
             label = "ARROW";
@@ -134,6 +150,7 @@
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;// delay positional check until key-release
         };
+
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_RIGHT";
@@ -147,6 +164,7 @@
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;// delay positional check until key-release
         };
+
         hml_shift: hml_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT_SHIFT";
@@ -160,6 +178,7 @@
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;// delay positional check until key-release
         };
+
         hmr_shift: hmr_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_RIGHT_SHIFT";
@@ -173,6 +192,7 @@
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;// delay positional check until key-release
         };
+
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -384,10 +404,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &trans        &kp C_VOLUME_DOWN  &kp K_MUTE2   &kp C_VOLUME_UP  &trans          &kp H     &kp J          &kp K      &kp L      &trans  &trans
-&trans      &kp LGUI      &kp LALT           &kp LSHIFT    &sk LCTRL        &sk RALT        &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4    &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans  &trans
-                                             &trans        &trans           &trans          &trans    &trans         &trans
+&trans  &trans    &trans    &trans      &trans     &trans      &kp H     &kp J          &kp K      &kp L      &trans  &trans
+&trans  &kp LGUI  &kp LALT  &kp LSHIFT  &sk LCTRL  &sk RALT    &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans    &trans    &trans      &trans     &trans      &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans  &trans
+                            &trans      &trans     &trans      &trans    &trans         &trans
             >;
         };
 
@@ -408,10 +428,10 @@
 
         Function {
             bindings = <
-&trans  &trans  &trans  &kp PRINTSCREEN  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans
-&trans  &trans  &trans  &kp LSHIFT       &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans  &trans  &trans           &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                        &trans           &trans  &trans    &trans  &trans  &trans
+&trans      &trans        &trans        &kp PRINTSCREEN  &trans        &trans          &kp C_VOLUME_UP    &kp F7  &kp F8  &kp F9  &kp F12  &trans
+&trans      &trans        &trans        &kp LSHIFT       &trans        &trans          &kp C_MUTE         &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_DOWN  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                        &trans           &trans        &trans          &trans             &trans  &trans
             >;
         };
     };
